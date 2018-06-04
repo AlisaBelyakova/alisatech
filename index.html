@@ -13,33 +13,186 @@
 <body>
     <div id='app'>
         <div id='header'>
-            <span id='face-container'><img src = './images/hex-me.png' id='me-pic'/></span>
+            <!-- <span id='face-container'><img src = './images/hex-me.png' id='me-pic'/></span> -->
             <span id ='about'>
-                <p> Hi, I'm Alisa! 
+                <p id='about-text'></p>
+                <!-- <p> Hi, I'm Alisa! 
                     <br/><br/>I am a full-stack Javascript Software Engineer, with experience in startup ventures, 
                     public-private partnerships, and municipal administration. Responsibilities range from 
                     team management and product development to engineering with expertise in object-oriented 
                     languages, database architecture, web development, RESTful API and single page applications. 
-                </p>
+                </p> -->
             </span>
-            <span id='media-container'>
-                <img src = './images/facebook-hex.png' class='media-pic' id='facebook'/>
-                <img src = './images/twitter-hex.png' class='media-pic' id='twitter'/>
-                <img src = './images/github-hex.png' class='media-pic' id='github'/>
-                <img src = './images/linkedin-hex.png' class='media-pic' id='linkedin'/>
-            </span>
+<span></span>
         </div>
+        <span id='media-container'>
+                <img src = './images/github-hex.png' class='toprow media-pic'/>
+                <img src = './images/facebook-hex.png' class='toprow media-pic' id='facebook'/>
+                <img src = './images/transp.png' class='gap toprow media-pic'/>
+                <img src = './images/transp.png' class='gap toprow media-pic'/> 
+                <br />
+                <img src = './images/twitter-hex.png' class='medrow media-pic' id='twitter'/>
+                <img src = './images/github-hex.png' class='medrow media-pic' id='github'/>
+                <img src = './images/linkedin-hex.png' class='medrow media-pic' id='linkedin'/>
+                <img src = './images/transp.png' class='gap medrow media-pic'/>
+                <br />
+                <img src = './images/transp.png' class='gap lowrow media-pic'/>
+                <img src = './images/transp.png' class='gap lowrow media-pic'/>
+                <img src = './images/github-hex.png' class='lowrow media-pic'/>
+
+            </span>
         <div id='skills'>
             <span></span>
-            <span id='colored-container'>
-                <img src = './images/green.png' class='colored-box' id='green'/>
-                <img src = './images/red.png' class='colored-box' id='red'/>
-                <img src = './images/yellow.png' class='colored-box' id='yellow'/>
-                <img src = './images/blue.png' class='colored-box' id='blue'/>
+            <span id='colored-container' >
+
+                <span class='gap zrow colored-item'><img src = './images/transp.png' class='colored-img' /></span>
+                <span class='gap zrow colored-item'><img src = './images/transp.png' class='colored-img' /></span>
+                <span class='gap zrow colored-item'><img src = './images/transp.png' class='colored-img' /></span> 
+                <span class='zrow colored-item'>
+                        <img src = './images/yellow.png' class='colored-img' />
+                        <p class='skill-text'>Javacript</p>
+                    </span>
+                <span class='zrow colored-item'>
+                        <img src = './images/yellow.png' class='colored-img' />
+                        <p class='skill-text'>Javacript</p>
+                    </span>
+                <span class='zrow colored-item'>
+                        <img src = './images/red.png' class='colored-img' />
+                        <p class='skill-text'>Solidity</p>
+                    </span>
+<!-- ........................................................................ FIRST ROW -->
+                <span class='frow colored-item'>
+                        <img src = './images/red.png' class='colored-img' />
+                        <p class='skill-text'>Web3.js</p>
+                    </span>
+                <span class='frow colored-item'>
+                        <img src = './images/red.png' class='colored-img' />
+                        <p class='skill-text'>Ethereum</p>
+                    </span>
+
+                <span class='gap frow colored-item'><img src = './images/transp.png' class='colored-img' /></span>
+
+                <span class='frow colored-item'>
+                    <img src = './images/green.png' class='colored-img' />
+                    <p class='skill-text'>Node.js</p>
+                    </span>
+                <span class='frow colored-item'>    
+                    <img src = './images/green.png' class='colored-img' />
+                    <p class='skill-text'>Express</p>
+                    </span> 
+
+<!-- ........................................................................ SECOND ROW -->
+
+                <span class='gap srow colored-item'><img src = './images/transp.png' class='colored-img' /></span>
+                <span class='srow colored-item'>
+                    <img src = './images/blue.png' class='colored-img' />
+                    <p class='skill-text'>React</p>
+                    </span>
+                <span class='srow colored-item'>
+                        <img src = './images/blue.png' class='colored-img' />
+                        <p class='skill-text'>React Native</p>
+                    </span>
+                <span class='srow colored-item'>
+                        <img src = './images/blue.png' class='colored-img' />
+                        <p class='skill-text'>HTML/CSS</p>
+                    </span>
+                <span class='srow colored-item'>
+                    <img src = './images/green.png' class='colored-img' />
+                    <p class='skill-text'>Postgres</p>
+                    </span>
+                <span class='gap srow colored-item'><img src = './images/transp.png' class='colored-img' /></span>
+<!-- ........................................................................ SECOND ROW -->
+                <span class='gap trow colored-item'><img src = './images/transp.png' class='colored-img' /></span>
+                <span class='gap trow colored-item'><img src = './images/transp.png' class='colored-img' /></span>
+                <span class='trow colored-item'>
+                        <img src = './images/green.png' class='colored-img' />
+                        <p class='skill-text'>SQLite</p>
+                    </span>
+                <span class='trow colored-item'>
+                        <img src = './images/green.png' class='colored-img' />
+                        <p class='skill-text'>Sequlize</p>
+                    </span>
             </span>
         </div>
+
+
+
         <div id='portfolio'>
-            
+            <span class='project-item'>
+                <p class='project-text'> A smart-contract application for the community’s needs and wants. 
+                    The contract allows for the unlimited number of users to engage in an amicable exchange 
+                    of goods and services. An Ethereum account is created 
+                    automatically for the user . 
+                    <br /> <a href=''> ➤ See code </a>    <a href=''> ➤ See app</a>
+                </p>
+            </span>
+            <span class='project-item'>
+                    <a href='http://one-world-community.herokuapp.com/'>
+                        <img src = './images/project.png' class='project-img' />
+                        <p class='project-name'>One World</p>
+                    </a>
+                </span>
+            <span class='project-item'>
+                <a href='http://one-world-community.herokuapp.com/'>
+                    <img src = './images/project.png' class='project-img' />
+                    <p class='project-name'>Lingo Land</p>
+                </a>
+            </span>
+            <span class='project-item'>
+                    <p class='project-text'> Web-based Virtual Reality linguistic application 
+                        that allows single and multi-user immersive learning experiences. 
+                        An app features real time audio communication as well as speech recognition.
+                        <br /> <a href=''> ➤ See code </a>    <a href=''> ➤ See app</a>
+                    </p>
+            </span>
+            <span class='project-item'>
+                    <p class='project-text'> Web-based Virtual Reality linguistic application 
+                        that allows single and multi-user immersive learning experiences. 
+                        An app features real time audio communication as well as speech recognition.
+                    </p>
+            </span>
+            <span class='project-item'>
+                <a href='http://lingo-land.herokuapp.com/'>
+                    <img src = './images/project.png' class='project-img' />
+                    <p class='project-name'>Lingo Land</p>
+                </a>
+            </span>
+            <span class='project-item'>
+                <a href='http://lingo-land.herokuapp.com/'>
+                    <img src = './images/project.png' class='project-img' />
+                    <p class='project-name'>Puppybook</p>
+                </a>
+            </span>
+            <span class='project-item text'>
+                    <p class='project-text'> Web-based Virtual Reality linguistic application 
+                        that allows single and multi-user immersive learning experiences. 
+                        An app features real time audio communication as well as speech recognition.
+                    </p>
+            </span>
+            <span class='project-item'>
+                    <p class='project-text'> Web-based Virtual Reality linguistic application 
+                        that allows single and multi-user immersive learning experiences. 
+                        An app features real time audio communication as well as speech recognition.
+                    </p>
+            </span>
+            <span class='project-item'>
+                    <a href='http://lingo-land.herokuapp.com/'>
+                        <img src = './images/project.png' class='project-img' />
+                        <p class='project-name'>Puppybook</p>
+                    </a>
+                </span>
+            <span class='project-item'>
+                    <a href='http://lingo-land.herokuapp.com/'>
+                        <img src = './images/project.png' class='project-img' />
+                        <p class='project-name'>Puppybook</p>
+                    </a>
+                </span>    
+            <span class='project-item'>
+                    <p class='project-text'> Web-based Virtual Reality linguistic application 
+                        that allows single and multi-user immersive learning experiences. 
+                        An app features real time audio communication as well as speech recognition.
+                    </p>
+            </span>
         </div>
     </div>
 
