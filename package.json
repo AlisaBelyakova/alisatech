@@ -1,0 +1,20 @@
+{
+  "name": "alisatech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "open index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlisaBelyakova/alisatech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlisaBelyakova/alisatech/issues"
+  },
+  "homepage": "https://github.com/AlisaBelyakova/alisatech#readme"
+}
