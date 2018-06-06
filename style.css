@@ -157,6 +157,12 @@ a{
     text-align: center; */
 }
 
+.project-img:hover {
+    position: relative;
+    top: -0.5vw;
+    left: -0.5vw;
+}
+
 .shift {
     position: relative;
     left: 14vw;
