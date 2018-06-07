@@ -94,20 +94,21 @@ a{
     top: -0.56vw; 
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #header-back{
-        position: fixed;
-        z-index: -1;
+        /* display: none; */
+        width: 150vw;
         height: 100vh;
-        width: 108vw;
         background-image: url('./images/33.png');
         background-size: cover;
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat; */
     }
     #header {
         /* background-image: url('./images/33.png');
-        background-size: auto 100vh;
-        background-repeat: no-repeat; */
+        background-size: 200%;
+        background-repeat: no-repeat;
+        width: 100vw; */
+        height: 100vh;
         display: grid;
         padding: 12vw;
         grid-template-columns: 100%;
@@ -128,10 +129,10 @@ a{
         background-color: rgba(255, 255, 255, 0.6);
     }
     #media-container {
-        width: 108vw;
+        width: 100vw;
         position: absolute;
-        top:5vw;
-        left: 45vw;
+        top:5%;
+        left: 45%;
     }
     .media-pic{
         display: inline-block;
@@ -160,7 +161,7 @@ a{
 
 #background {
     width: 108vw;
-    height: 200vh;
+    height: auto;
     background-image: url('./images/code2-small.png');
     background-size: cover;
     background-repeat: repeat-y;
@@ -178,7 +179,7 @@ a{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #skills {
         display: none;
     } 
@@ -193,7 +194,7 @@ a{
     width: var(--unit); */
     width: 2vw;
     opacity: 0;
-    transition: opacity 1s ease, width 2s ease, margin 1s ease ;
+    transition: opacity 0.5s ease, width 1s ease, margin 0.5s ease ;
     /* margin: calc(( var(--unit)/3.6)*(-1)); */
 }
 .zrow{
@@ -220,7 +221,7 @@ a{
     font-size: 2vw;
 
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: opacity 1.5s ease;
 }
 
 /* ------------------------------------------------------- PORTFOLIO */
@@ -238,7 +239,7 @@ a{
 .project-img{
     width: 25vw;
     opacity: 0;
-    transition: all 1.5s ease; 
+    transition: all 1s ease; 
 }
 
 .project-item {
@@ -271,4 +272,59 @@ a{
     width: 26vw;
     opacity: 0;
     transition: all 1.5s ease; 
+}
+
+@media screen and (max-width: 800px) {
+    #portfolio {
+        padding-top: 15vw;
+    }
+    
+    .project-item {
+        justify-self: center;
+        margin: -7vw 1vw;
+        display: block;
+        /* margin: 0;
+        text-align: center; */
+    }
+
+    .shift {
+        position: relative;
+        left: 0;
+    }
+
+    .project-img{ 
+        opacity: 1;
+        width: 80vw;
+        margin: 5% 0;
+        z-index: 1;
+    }
+/* 
+    .project-img:hover{ 
+        transform: rotate(360deg);
+    } */
+
+    .hidden {
+        display: none;
+    }
+ 
+    .project-name{
+        display: inline;
+        position: relative;
+        z-index: 10;
+        top: -10vw;
+        left: 0;
+        /* top: -16vw; */
+        background-color: rgba(7, 0, 0, 0.3);
+        color: white;
+        font-size: 5vw;
+        line-height: 9vw;
+        /* text-align: center; */
+        width: 100%;
+    }
+
+    #background {
+        width: 150vw;
+        height: auto;
+        background-size: cover; 
+    }
 }
