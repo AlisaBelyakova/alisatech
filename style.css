@@ -124,7 +124,7 @@ a{
         /* width: 75%; */
         padding: 5%;
         border-radius: 5%;
-        font-size: 4vw;
+        font-size: 4.5vw;
         align-self: center;
         background-color: rgba(255, 255, 255, 0.6);
     }
@@ -308,18 +308,19 @@ a{
     }
  
     .project-name{
-        display: inline;
+        display: block;
         position: relative;
         z-index: 10;
-        top: -10vw;
+        top: -58vw;
         left: 0;
         /* top: -16vw; */
         background-color: rgba(7, 0, 0, 0.3);
         color: white;
-        font-size: 5vw;
-        line-height: 9vw;
+        font-size: 10vw;
+        line-height: 13vw;
         /* text-align: center; */
-        width: 100%;
+        width: 85vw;
+        opacity: 1;
     }
 
     #background {
