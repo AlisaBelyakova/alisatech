@@ -22,7 +22,9 @@ window.addEventListener('load', () => {
         event.target.style.height = window.innerWidth > 800 ? '5.5vw' : '16vw';
 
         let prevImg = event.target.getAttribute('src').split('images/')[1];
+        console.log(event.target.getAttribute('src'))
         event.target.setAttribute('src', './images/' + prevImg.slice(0, prevImg.indexOf('.')) + '-white.png');
+        console.log(event.target.getAttribute('src'))
     }))
 
     medias.forEach(item => item.addEventListener('mouseleave', (event) => {
@@ -30,6 +32,7 @@ window.addEventListener('load', () => {
 
         let prevImg = event.target.getAttribute('src').split('images/')[1];
         event.target.setAttribute('src', './images/' + prevImg.slice(0, prevImg.indexOf('-white')) + '.png');
+        console.log(event.target.getAttribute('src'))
     }));
 
 
