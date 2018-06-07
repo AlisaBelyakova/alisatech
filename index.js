@@ -21,15 +21,15 @@ window.addEventListener('load', () => {
     medias.forEach(item => item.addEventListener('mouseenter', (event) => {
         event.target.style.height = window.innerWidth > 800 ? '5.5vw' : '16vw';
 
-        let prevImg = event.target.src;
-        event.target.setAttribute('src', prevImg.slice(0, prevImg.indexOf('.')) + '-white.png');
+        let prevImg = event.target.getAttribute('src').split('images/')[1];
+        event.target.setAttribute('src', './images/' + prevImg.slice(0, prevImg.indexOf('.')) + '-white.png');
     }))
 
     medias.forEach(item => item.addEventListener('mouseleave', (event) => {
         event.target.style.height = window.innerWidth > 800 ? '5vw' : '15vw';
 
-        let prevImg = event.target.getAttribute('src')
-        event.target.setAttribute('src', prevImg.slice(0, prevImg.indexOf('-')) + '-hex.png');
+        let prevImg = event.target.getAttribute('src').split('images/')[1];
+        event.target.setAttribute('src', './images/' + prevImg.slice(0, prevImg.indexOf('-white')) + '.png');
     }));
 
 
