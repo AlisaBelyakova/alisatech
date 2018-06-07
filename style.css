@@ -15,13 +15,23 @@ a{
 
 /* ------------------------------------------------------- HEADER  */
 
-#header {
+
+#header-back{
+    position: fixed;
+    z-index: -1;
     height: 100vh;
-    width: 100vw;
+    width: 108vw;
     background-image: url('./images/22.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 5%;
+}
+#header {
+    height: 100vh;
+    width: 108vw;
+    /* background-image: url('./images/22.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    padding: 5% 15% 5% 5% ;
     display: grid;
     grid-template-columns: 50% 47% 3%;
     grid-template-rows: 100%;
@@ -39,6 +49,7 @@ a{
     width: 90%;
     height: auto;
 }
+
 
 #about{
     position: relative;
@@ -63,14 +74,18 @@ a{
 .media-pic{
     display: inline-block;
     height: 5vw;
-    border-radius: 15%;
-    margin: -2% -1.6%;
-    
+    border-radius: 50%;
+    margin: -1% -0.8%;
+    transition: all 0.5s ease;
 } 
+/* 
+.border:hover {
+    height: 5.5vw;
+} */
 
 .medrow {
     position: relative;
-    left: 2.5vw;
+    left: 2.2vw;
     top: -0.28vw;
 }
 
@@ -78,16 +93,83 @@ a{
     position: relative;
     top: -0.56vw; 
 }
+
+@media (max-width: 600px) {
+    #header-back{
+        position: fixed;
+        z-index: -1;
+        height: 100vh;
+        width: 108vw;
+        background-image: url('./images/33.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #header {
+        /* background-image: url('./images/33.png');
+        background-size: auto 100vh;
+        background-repeat: no-repeat; */
+        display: grid;
+        padding: 12vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 80%;
+    }
+
+    #about{
+        position: relative;
+        top: 15vh;
+        text-shadow: 2px 2px 2px white;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        /* width: 75%; */
+        padding: 5%;
+        border-radius: 5%;
+        font-size: 4vw;
+        align-self: center;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    #media-container {
+        width: 108vw;
+        position: absolute;
+        top:5vw;
+        left: 45vw;
+    }
+    .media-pic{
+        display: inline-block;
+        height: 15vw;
+        border-radius: 15%;
+        margin: -1% ;
+    } 
+
+    .medrow {
+        position: relative;
+        left: 7.1vw;
+        top: -1vw;
+    }
+    
+    .lowrow {
+        position: relative;
+        top: -2vw; 
+    }
+}
+
+
+
+
+
 /* ------------------------------------------------------- SKILLS  */
 
 #background {
+    width: 108vw;
+    height: 200vh;
     background-image: url('./images/code2-small.png');
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: repeat-y;
+    z-index: 1;
 }
 
 #skills {
     /* position: relative;  */
-    /* height: 100vh; */
+    width: 100vw;
     padding: 0 10%;
     /* display: grid;
     grid-template-columns: 40% 60%; */
@@ -95,18 +177,23 @@ a{
     /* border: 1px solid grey; */
 }
 
-/* #colored-container{
-    grid-column: 2 / span 1;
-} */
 
+@media only screen and (max-width: 600px) {
+    #skills {
+        display: none;
+    } 
+}
 .colored-item {
     text-align: center;
     display: inline-block;
 }
 
 .colored-img {
-    --unit: 12vw;
-    width: var(--unit);
+    /* --unit: 12vw;
+    width: var(--unit); */
+    width: 2vw;
+    opacity: 0;
+    transition: opacity 1s ease, width 2s ease, margin 1s ease ;
     /* margin: calc(( var(--unit)/3.6)*(-1)); */
 }
 .zrow{
@@ -131,13 +218,16 @@ a{
     top: -7.5vw;
     /* left: -6vw; */
     font-size: 2vw;
+
+    opacity: 0;
+    transition: opacity 2s ease;
 }
 
 /* ------------------------------------------------------- PORTFOLIO */
 
 #portfolio {
     /* background-color: grey; */
-    /* height: 100vh; */
+    width: 100vw;
     /* border: 1px solid grey; */
     padding: 5%;
     text-align: center;
@@ -147,6 +237,8 @@ a{
 }
 .project-img{
     width: 25vw;
+    opacity: 0;
+    transition: all 1.5s ease; 
 }
 
 .project-item {
@@ -176,15 +268,7 @@ a{
     font-size: 3vw;
     line-height: 3vw;
     text-align: center;
-    /* width: 32vw; */
+    width: 26vw;
+    opacity: 0;
+    transition: all 1.5s ease; 
 }
-
-.project-text {
-    padding: 0 6vw;
-    position: relative;
-    top: 10vw;
-    text-align: left;
-    font-size: 1.6vw;
-}
-
-

@@ -1,3 +1,4 @@
+
 window.addEventListener('load', () => {
     const aboutText = `Hi, I'm Alisa! <br> 
     I am a full-stack software engineer with experience in startup ventures, 
@@ -16,6 +17,61 @@ window.addEventListener('load', () => {
         }
     }, 30)
 
+    let medias = Array.from(document.getElementsByClassName('border'));
+    medias.forEach(item => item.addEventListener('mouseenter', (event) => {
+        event.target.style.height = window.innerWidth > 600 ? '5.5vw' : '16vw';
+
+        let prevImg = event.target.src;
+        event.target.setAttribute('src', prevImg.slice(0, prevImg.indexOf('.')) + '-white.png');
+    }))
+
+    medias.forEach(item => item.addEventListener('mouseleave', (event) => {
+        event.target.style.height = window.innerWidth > 600 ? '5vw' : '15vw';
+
+        let prevImg = event.target.getAttribute('src')
+        event.target.setAttribute('src', prevImg.slice(0, prevImg.indexOf('-')) + '-hex.png');
+    }));
+
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+            Array.from(document.querySelectorAll('.colored-img')).forEach(item => {
+                item.style.opacity = '1';
+            })
+        }
+
+        if (scrollPosition > 250) {
+            Array.from(document.querySelectorAll('.colored-img')).forEach(item => {
+                item.style.width = '6vw';
+                item.style.margin = '2vw 0';
+            })
+            Array.from(document.querySelectorAll('.skill-text')).forEach(item => {
+                item.style.opacity = '0';
+            })
+        }
+
+        if (scrollPosition > 450) {
+            Array.from(document.querySelectorAll('.skill-text')).forEach(item => {
+                item.style.opacity = '1';
+            })
+
+            Array.from(document.querySelectorAll('.colored-img')).forEach(item => {
+                item.style.width = '12vw';
+                item.style.margin = '0';
+            });
+        }
+
+
+
+        if (scrollPosition > 1000) {
+            Array.from(document.querySelectorAll('.project-img, .project-name')).forEach(item => {
+                item.style.opacity = '1';
+            })
+        }
+
+    })
 
 
 })
