@@ -21,6 +21,7 @@ a{
     z-index: -1;
     text-align: center;
     position: fixed;
+    top:0;
     height: 100vh;
     width: 100vw;
 }
@@ -28,6 +29,7 @@ a{
     z-index: -1;
     color: darkcyan;
     width: 100%;
+    position: fixed;
     margin-top: 35vh;
 }
 
