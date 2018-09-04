@@ -2,7 +2,7 @@
 window.addEventListener('load', () => {
     const aboutText = `Hi, I'm Alisa! <br> 
     I'm hacking with Javascript and building future in Web VR. 
-    I love solving challenging puzzles and team with people from different fields'.   
+    I love solving challenging puzzles and team with people from various fields.   
     <br> See my projects below <br> and drop me a line to say - HELLO :]`
 
     const about = document.getElementById('about-text');
