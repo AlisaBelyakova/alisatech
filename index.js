@@ -5,14 +5,6 @@ window.addEventListener('load', () => {
     I love solving challenging puzzles and team with people from different fields'.   
     <br> See my projects below <br> and drop me a line to say - HELLO :]`
 
-    // const aboutText = `Hi, I'm Alisa! <br> 
-    // I am a full-stack software engineer with experience in startup ventures, 
-    // public-private partnerships and Smart City applications. <br> 
-    // My expertise is in Node.js, Express, React, Solidity, and Relational Database solutions.  
-    // <br> See my projects below <br> and drop me a line to say - HELLO :]`
-
-
-
     const about = document.getElementById('about-text');
     let count = 0;
     let type = window.setInterval(() => {
