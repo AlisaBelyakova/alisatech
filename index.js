@@ -1,8 +1,8 @@
 
 window.addEventListener('load', () => {
     const aboutText = `Hi, I'm Alisa! <br> 
-    I'm a full-stack Software Engineer with experience in 
-    Node.js, Express, React, and Relational Database solutions. 
+    I'm hacking with Javascript and build future in Web VR. 
+    I love solving challenging puzzles and team with people from different fields'.   
     <br> See my projects below <br> and drop me a line to say - HELLO :]`
 
     // const aboutText = `Hi, I'm Alisa! <br> 
